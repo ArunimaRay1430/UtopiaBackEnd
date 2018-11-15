@@ -1,20 +1,16 @@
 body{
     padding: 0.1px;
     margin: 0px;
-    color: white;
+    color: black;
 }
 
 .section1{
     width: 100%;
-    height: 1320px;
-    background: green;
+    height: 660px;
 }
 
-
-
 .section1 .wrapper{
-    display: flex;
-    flex-direction: column;
+    height: 100%;
     width: 100%;
     height: 660px;
     background: blue;
@@ -224,9 +220,43 @@ line-height: normal;
 font-size: 20px;
 letter-spacing: 1px;
 text-transform: uppercase;
+    background-image: url("/img/Background5.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.section1 .logo{
+    width: 140px;
+    height: 50px;
+    background: red;
+    margin-top: 100px;
+    margin-left: 68px;
+    display: inline-block;
+}
+.section1 .navigation{
+    width: 580px;
+    height: 17px;
+    display: inline-block;
+    margin-top: 122px;
+    margin-left: 144px;
+    font-style: italic;
+    vertical-align: top;
+}
 
-color: #FFFFFF;
-display: inline-block;
+.section1 .navigation a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin-right: 37px;
+}
+
+.section1 .signin{
+    width: 154px;
+    height: 17px;
+    display: inline-block;
+    margin-top: 122px;
+    margin-left: 100px;
+    vertical-align: top;
 }
 .section1 .opensource {
     
@@ -275,12 +305,40 @@ line-height: normal;
 font-size: 20px;
 letter-spacing: 1px;
 text-transform: uppercase;
+}
 
-color: #492FB4;
+.section1 .signin a{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+}
 
-mix-blend-mode: normal;
-opacity: 0.25;
+.section1 .signup{
+    display: inline-block;
+}
 
+.section1 .signup a{
+    color: #492FB4;
+}
+
+.section1 .login{
+    display: inline-block;
+    margin-left: 44px;
+}
+
+.section1 .content{
+    width: 563px;
+    height: 265px;
+    margin-top: 102px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section1 .content .left-list{
+    width: 50%;
+    height: 100%;
+    float: left;
 }
 
 .section1 .govt {
@@ -352,9 +410,57 @@ font-size: 50px;
 letter-spacing: 2px;
 color:white;
 display: inline-block;
+.section1 .content .right-list{
+    width: 50%;
+    height: 100%;
+    float: right;
 }
 
+.video-section{
+    width: 100%;
+    height: 1156px;
+}
 
+.video-section .wrapper{
+    width: 81%;
+    height: 1156px;
+    margin: 196px auto;
+
+}
+
+.video-section .header{
+    margin: 0 auto;
+    width: 520px;
+    height: 96px;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    font-style: italic;
+    color: black;
+}
+
+.video-section .content{
+    width: 970px;
+    height: 108px;
+    margin-top: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.video-section .video{
+    width: 100%;
+    height: 600px;
+    background: grey;
+    margin-top: 120px;
+}
+
+.video-section .video iframe{
+    height: 100%;
+    width: 100%;
+}
 
 .section2{
     width: 100%;
@@ -646,10 +752,12 @@ display: inline-block;
       height:590px;
       width: 100%;
       background: linear-gradient(157.52deg, #3023AE 0%, #C86DD7 101.5%);
+      overflow: hidden;
 }
+
 .section4 .account-button-text{   
     margin-left: 849px; 
-    margin-top: 160px;
+    margin-top: 100px;
     height:98px;
     width: 398px;
     font-family: ABeeZee;
@@ -668,6 +776,7 @@ display: inline-block;
 }
 .section4 .account-section-header{
        margin-left: 160px;
+       margin-top:61px;
        font-family: ABeeZee;
        font-style: italic;
        font-weight: normal;
@@ -679,7 +788,20 @@ display: inline-block;
 }
 .section4 .account-section-subhead{
     margin-left: 184px;
-    margin-top: 32px; 
+    margin-top: 32px;     
+}
+
+.section4 .lower-section-header{
+    margin-left: 202px;
+    margin-top: 104px; 
+}
+.section4 .lower-section-subhead{
+   width: 637px;
+   height: 282px;
+   margin-left: 261px;
+   margin-top: 63px;   
+}
+.section4 .account-sec-text{
     font-family: ABeeZee;
     font-style: italic;
     font-weight: normal;
@@ -688,72 +810,27 @@ display: inline-block;
     letter-spacing: 1px;
     color: #FFFFFF;
 }
-
-
-.section4 .lower-section-header{
-    margin-left: 202px;
-    margin-top: 104px;
+.section4 .lower-sec-text{
     font-family: ABeeZee;
     font-style: italic;
     font-weight: normal;
     line-height: normal;
     font-size: 20px;
     letter-spacing: 1px;
-
+ 
     color: #1D1E1F;
-
 }
-.section4 .lower-section-subhead{
-   width: 637px;
-   height: 282px;
-   margin-left: 261px;
-   margin-top: 63px; 
-   font-family: ABeeZee;
-   font-style: italic;
-   font-weight: normal;
-   line-height: normal;
-   font-size: 20px;
-   letter-spacing: 1px;
-
-   color: #1D1E1F;
-
-}
-
 .section4 .lower-section-insidesubhead1{
     margin-left: 220px;
-    margin-top: 357px; 
-    font-family: ABeeZee;
-    font-style: italic;
-    font-weight: normal;
-    line-height: normal;
-    font-size: 20px;
-    letter-spacing: 1px; 
-    color: #1D1E1F;
- 
+    margin-top: 357px;  
  }
  .section4 .lower-section-insidesubhead2{
     margin-left: 209px;
     margin-top: 27px; 
-    font-family: ABeeZee;
-    font-style: italic;
-    font-weight: normal;
-    line-height: normal;
-    font-size: 20px;
-    letter-spacing: 1px; 
-    color: #1D1E1F;
- 
  }
  .section4 .lower-section-insidesubhead3{
     margin-left: 208px;
-    margin-top: 39px; 
-    font-family: ABeeZee;
-    font-style: italic;
-    font-weight: normal;
-    line-height: normal;
-    font-size: 20px;
-    letter-spacing: 1px; 
-    color: #1D1E1F;
- 
+    margin-top: 39px;  
  }
  .section3 .row1 {
     position: absolute;
@@ -820,4 +897,11 @@ display: inline-block;
       margin-top: 350px;
       height: 668px;
       width: 1171px;
+  }
+
+  .model-alignment {
+      align-self: center;
+      background-color: #04030F;
+      height: 40px;
+      width: 50px; 
   }
