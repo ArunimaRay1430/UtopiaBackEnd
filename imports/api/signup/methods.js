@@ -1,6 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 import {User} from './collection';
-import { Mongo } from 'meteor/mongo';
+
 if (Meteor.isServer) {
     // This code only runs on the server
    
@@ -35,11 +35,25 @@ if (Meteor.isServer) {
 
           'user.login'(uname,pwd) {
             console.log("in method login...");
+           
             let result = User.findOne({username:uname})
-            if(result.password == pwd)
+            if(result!=undefined)
             {
-                console.log("succesfully logged in !!!!")
+              if(result.password == pwd)
+              {
+                  console.log("succesfully logged in !!!!")
+                  return result
+              }
+              else{
+                console.log("Incorrect password !!!!")
+                return 0;
+              } 
             }
+            else{
+              console.log("Incorrect username !!!!")
+              return 0;
+            }
+           
 
           }
           

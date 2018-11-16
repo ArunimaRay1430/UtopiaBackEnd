@@ -28,8 +28,21 @@ Template.logIn.events({
 
         console.log(uname)
         console.log(pwd)
-        Meteor.call('user.login', uname, pwd)
-        AntiModals.dismissAll();
+       // Meteor.call('user.login', uname, pwd)
+        Meteor.call('user.login',  uname, pwd, function(error, result) {
+            if(result!=0)
+            {
+                console.log("successfully loggedin...")
+                AntiModals.dismissAll();
+            }
+            else
+            {
+                console.log("Incorrect password, please try again !!!!");
+                
+                
+            }
+        });
+      //  
     },
 
 
